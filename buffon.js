@@ -31,12 +31,10 @@ var evaluate = function(iterations) {
     attempts += 1;
     if (interceptsLine(n, windowHeight / 3) || interceptsLine(n, 2 * windowHeight / 3) || interceptsLine(n, windowHeight) || interceptsLine(n, 0)) {
       hits += 1;
-      console.log("gothere");
     }
-    console.log("globalAttempts : " + attempts + " globalHit : " + hits);
   }
   var piApprox = 2 * attempts / hits;
-  console.log("globalAttempts : " + attempts + " globalHit : " + hits + " piApprox : " + piApprox);
+  console.log("With " + attempts " iterations, pi is approximated as " + piApprox);
 }
 
 evaluate(numIter);
